@@ -1,0 +1,16 @@
+{
+  "c2p2Admin": {
+    "transactions": {
+      "title": "2C2P transactions",
+      "loading": "Loading…",
+      "empty": "No 2C2P transactions yet.",
+      "invoiceNo": "Invoice",
+      "amount": "Amount",
+      "status": "Status",
+      "tranRef": "2C2P tranRef",
+      "channel": "Channel",
+      "createdAt": "Created",
+      "refund": "Refund"
+    }
+  }
+}
