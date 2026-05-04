@@ -4,15 +4,24 @@
       <h2>{{ $t('c2p2Admin.transactions.title') }}</h2>
     </header>
 
-    <div v-if="loading" class="c2p2-transactions__loading">
+    <div
+      v-if="loading"
+      class="c2p2-transactions__loading"
+    >
       {{ $t('c2p2Admin.transactions.loading') }}
     </div>
 
-    <div v-else-if="error" class="c2p2-transactions__error">
+    <div
+      v-else-if="error"
+      class="c2p2-transactions__error"
+    >
       {{ error }}
     </div>
 
-    <table v-else-if="transactions.length > 0" class="c2p2-transactions__table">
+    <table
+      v-else-if="transactions.length > 0"
+      class="c2p2-transactions__table"
+    >
       <thead>
         <tr>
           <th>{{ $t('c2p2Admin.transactions.invoiceNo') }}</th>
@@ -21,11 +30,14 @@
           <th>{{ $t('c2p2Admin.transactions.tranRef') }}</th>
           <th>{{ $t('c2p2Admin.transactions.channel') }}</th>
           <th>{{ $t('c2p2Admin.transactions.createdAt') }}</th>
-          <th></th>
+          <th />
         </tr>
       </thead>
       <tbody>
-        <tr v-for="tx in transactions" :key="tx.id">
+        <tr
+          v-for="tx in transactions"
+          :key="tx.id"
+        >
           <td>{{ tx.invoice_no }}</td>
           <td>{{ tx.amount }} {{ tx.currency }}</td>
           <td>
@@ -47,7 +59,10 @@
       </tbody>
     </table>
 
-    <div v-else class="c2p2-transactions__empty">
+    <div
+      v-else
+      class="c2p2-transactions__empty"
+    >
       {{ $t('c2p2Admin.transactions.empty') }}
     </div>
   </div>
