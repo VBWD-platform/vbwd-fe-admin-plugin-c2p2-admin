@@ -69,7 +69,8 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, storeToRefs } from 'vue';
+import { onMounted } from 'vue';
+import { storeToRefs } from 'pinia';
 import { useC2P2Store, type C2P2Transaction } from '../stores/c2p2';
 import { api } from '@/api';
 
