@@ -2,7 +2,7 @@ import type { IPlugin, IPlatformSDK } from 'vbwd-view-component';
 
 export const c2p2AdminPlugin: IPlugin = {
   name: 'c2p2-admin',
-  version: '26.6',
+  version: '26.6.1',
   description:
     '2C2P admin — transactions list + refund. Config is surfaced by the core Settings → Plugins page.',
 
